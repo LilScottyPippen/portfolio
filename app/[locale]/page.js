@@ -1,6 +1,7 @@
-import styles from "./page.module.css";
+'use client'
+import styles from "../../public/css/page.module.css";
 import initTranslations from "./i18n";
-import Header from "./header";
+import Header from "../components/header";
 
 export default async function Home({ params: { locale } }) {
   const { t } = await initTranslations(locale, ['main', 'elements']);
