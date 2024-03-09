@@ -12,7 +12,7 @@ export default function Header({ t, locale, title }) {
         
         <h1>&#8288;<TypeIt options={{
           strings: [title],
-          speed: 10,
+          speed: 20,
           waitUntilVisible: true,
         }}/></h1>
 
