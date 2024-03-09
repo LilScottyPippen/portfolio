@@ -1,3 +1,4 @@
+"use client"
 import styles from "@/public/css/page.module.css";
 import getTranslation from "../components/base/lang/translations";
 import Header from "../components/base/header/header";
@@ -8,7 +9,7 @@ export default async function Home({ params: { locale } }) {
   
   return (
     <>
-      <Header t={t} locale={locale} title="LilScottyPippen" />
+      <Header t={t} locale={locale} title="LilScottyPippen"/>
       <main className={styles.main}>
         <div className={styles.description}>
           <p>{t('about-me')}</p>

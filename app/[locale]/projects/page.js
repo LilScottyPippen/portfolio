@@ -1,3 +1,4 @@
+"use client"
 import styles from "@/public/css/page.module.css";
 import getTranslation from "../../components/base/lang/translations";
 import Header from "../../components/base/header/header";
