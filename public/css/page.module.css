@@ -7,6 +7,10 @@
   min-height: 100vh;
 }
 
+.header{
+  margin-bottom: 2rem;
+}
+
 .main{
   display: flex;
   flex-direction: column;
