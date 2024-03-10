@@ -4,14 +4,16 @@ import Header from "../../components/base/header/header";
 import Footer from "../../components/base/footer";
 import getSortedProjectsData from "./projects";
 
+let t
+
 export default async function Home({ params: { locale } }) {
-  const t = await getTranslation(locale);
+  t = await getTranslation(locale);
   return (
     <>
       <Header t={t} locale={locale} title={t('elements:projects')} />
       <main className={styles.main}>
         <div className={styles.description}>
-          <Projects />
+          <Projects t={t} locale={locale} />
         </div>
       </main>
       <Footer />
@@ -19,16 +21,16 @@ export default async function Home({ params: { locale } }) {
   );
 }
 
-async function Projects() {
-  const projects = await getSortedProjectsData()
+async function Projects(locale) {
+  const projects = await getSortedProjectsData(locale)
  
   return (
     <div className={styles.projects}>
       {projects.map((project) => (
-        <div key={project.id}>
+        <div className={styles.project} key={project.id}>
           <h3>{project.title}</h3>
-          <br></br>
-          <span>Read more →</span>
+          <span>{project.description}</span>
+          <p>{t('elements:readMore')}</p>
         </div>
       ))}
     </div>

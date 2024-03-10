@@ -2,9 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const projectsDirectory = path.join(process.cwd(), 'projects');
-
-export default function getSortedProjectsData() {
+export default function getSortedProjectsData({locale}) {
+  const projectsDirectory = path.join(process.cwd(), `projects/${locale}`);
   const fileNames = fs.readdirSync(projectsDirectory);
   const allProjectsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, '');

@@ -80,8 +80,14 @@
   justify-content: center;
 }
 
-.projects{
+.projects, .project{
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.project h3,
+.project p {
+  cursor: pointer;
+  width: fit-content;
 }

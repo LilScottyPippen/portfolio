@@ -1,5 +1,6 @@
 ---
 title: 'Web-application NA ZARE'
+description: 'This is web-application for park-hotel "NA ZARE"'
 date: '2020-01-01'
 ---
 
