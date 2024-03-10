@@ -91,3 +91,17 @@
   cursor: pointer;
   width: fit-content;
 }
+
+.project a{
+  text-decoration: none;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content ul{
+  margin-left: 30px;
+}

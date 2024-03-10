@@ -1,12 +1,19 @@
 ---
-title: 'Web-приложение NA ZARE'
+title: 'Web-приложение "NA ZARE"'
 description: 'Это веб-приложение для парк-отеля "NA ZARE"'
-date: '2020-01-01'
+date: '2024-01-01'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+[Перейти к проекту →](https://nazare.by)
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+Цель создания этого веб-приложения - предоставить посетителям удобный и эффективный способ просмотра доступных гостиничных апартаментов и онлайн-бронирования.
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+## Технологический стек:
+
+### Frontend:
+- HTML
+- CSS
+- JS
+
+### Backend:
+- Python/Django
