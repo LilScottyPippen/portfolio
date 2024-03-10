@@ -47,7 +47,7 @@
   z-index: 2;
 }
 
-.description p {
+.description div {
   position: relative;
   margin: 0;
   padding: 1rem;
@@ -78,4 +78,10 @@
   display: flex;
   margin-top: 7rem;
   justify-content: center;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

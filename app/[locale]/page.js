@@ -12,9 +12,9 @@ export default async function Home({ params: { locale } }) {
       <Header t={t} locale={locale} title="LilScottyPippen"/>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p>{t('about-me')}</p>
+          <div>{t('about-me')}</div>
           <br></br>
-          <p>{t('about-me-decription')}</p>
+          <div>{t('about-me-decription')}</div>
         </div>
 
         <div className={styles.block}>
