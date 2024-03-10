@@ -94,6 +94,7 @@
 
 .project a{
   text-decoration: none;
+  width: fit-content;
 }
 
 .content{

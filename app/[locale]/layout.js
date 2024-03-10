@@ -9,9 +9,9 @@ export default function Layout({ children }) {
     <html lang="en">
       <body className={styles.body}>
         {children}
-        <Analytics />
-        <SpeedInsights />
       </body>
+      <Analytics />
+      <SpeedInsights />
     </html>
   );
 }
