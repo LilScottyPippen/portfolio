@@ -16,6 +16,10 @@ export default function Header({ t, locale, title }) {
         <div className={styles.nav}>
           <Map t={t} locale={locale} title={title} />
         </div>
+
+        <div className={styles.download}>
+          <a href={`/pdf/portfolio/lsp-${locale}.pdf`} download>{t('download-pdf')}</a>
+        </div>
       </header>
     </>
   );

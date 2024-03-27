@@ -36,6 +36,11 @@
   justify-content: right;
 }
 
+.download{
+  display: flex;
+  justify-content: right;
+}
+
 .description {
   display: flex;
   flex-direction: column;
