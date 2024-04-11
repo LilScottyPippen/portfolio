@@ -20,7 +20,7 @@ export default async function Home({ params: { locale } }) {
 
           <div className={styles.block}>
             <h2>{t('elements:my-skills')}</h2>
-            <iframe src="https://skillicons.dev/icons?i=python,django,html,css,js,mysql" height="50"/>
+            <iframe src="https://skillicons.dev/icons?i=python,django,html,css,js,mysql" height="50" title="skills"/>
           </div>
           <hr></hr>
           <div className={styles.block}>

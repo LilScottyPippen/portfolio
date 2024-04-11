@@ -1,0 +1,9 @@
+User-Agent: *
+Allow: /
+Disallow: /*.json$
+Disallow: /*_buildManifest.js$
+Disallow: /*_middlewareManifest.js$
+Disallow: /*_ssgManifest.js$
+Disallow: /*.js$
+
+Sitemap: https://lilscottypippen.site/sitemap.xml
