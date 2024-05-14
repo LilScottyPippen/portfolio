@@ -28,7 +28,7 @@ export default async function Home({ params: { locale } }) {
             <ul className={styles.contacts}>
               <li>GitHub: <a href="https://github.com/LilScottyPippen" target="_blank">@LilScottyPippen</a></li>
               <li>Instagram: <a href="https://instagram.com/v_moem_serdce_dirka" target="_blank">@v_moem_serdce_dirka</a></li>
-              <li>Telegram: <a href="https://t.me/lil_pigs" target="_blank">@lil_pigs</a></li>
+              <li>Telegram: <a href="https://t.me/lil_pig" target="_blank">@lil_pig</a></li>
               <li>Email: <a href="mailto:lilscottypippen33@gmail.com">lilscottypippen33@gmail.com</a></li>
             </ul>
           </div>

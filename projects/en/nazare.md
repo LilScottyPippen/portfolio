@@ -6,14 +6,17 @@ date: '2024-01-01'
 
 [Go to the project →](https://nazare.by)
 
-This is a web application developed for the park hotel "NA ZARE". Its purpose is to provide users with convenient access to viewing and booking hotel apartments over the Internet, providing a wide range and reliable conditions for online booking.
+This is a web application developed for the park hotel "NA ZARE". It's purpose is to provide users with convenient access to viewing and booking hotel apartments.
 
-## Technology stack:
+## My responsibilities:
+- Design development
+- Layout
+- Database design
+- Writing the client part
+- Writing the backend
+- Deployment to hosting
 
-### Frontend:
-- HTML
-- CSS
-- JS
-
-### Backend:
-- Python/Django
+## Technologies:
+- Client side: HTML/CSS, JS/AJAX/HTML
+- Backend: Python/Django
+- Database: MySQL
