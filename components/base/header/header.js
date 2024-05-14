@@ -18,7 +18,7 @@ export default function Header({ t, locale, title }) {
         </div>
 
         <div className={styles.download}>
-          <a href={`/pdf/portfolio/lsp-${locale}.pdf`} download>{t('download-pdf')}</a>
+          <a href={`/pdf/cv/lsp-cv-${locale}.pdf`} download>{t('download-pdf')}</a>
         </div>
       </header>
     </>
