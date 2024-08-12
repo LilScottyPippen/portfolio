@@ -3,7 +3,7 @@ import styles from "@/public/css/page.module.css";
 import getTranslation from "@/components/base/lang/translations";
 import Header from "@/components/base/header/header";
 import Footer from "@/components/base/footer";
-import getSortedProjectsData from "./projects";
+import getSortedProjectsData, { getProjectType } from "./projects";
 
 let t
 
@@ -32,7 +32,10 @@ async function Projects(locale) {
     <div className={styles.projects}>
       {projects.map((project) => (
         <div className={styles.project} key={project.id}>
-          <h3><a href={`/projects/${project.id}`}>{project.title}</a></h3>
+          <span className={styles.project_header}>
+            <h3><a href={`/projects/${project.id}`}>{project.title}</a></h3>
+            <span className={styles.project_type}>{project.type}</span>
+          </span>
           <span>{project.description}</span>
           <a href={`/projects/${project.id}`}>{t('elements:readMore')}</a>
         </div>

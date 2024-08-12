@@ -1,17 +1,17 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 import { redirect } from 'next/navigation'
 
 export default function getSortedProjectsData({locale}) {
-  const projectsDirectory = path.join(process.cwd(), `projects/${locale}`);
-  const fileNames = fs.readdirSync(projectsDirectory);
+  const projectsDirectory = path.join(process.cwd(), `projects/${locale}`)
+  const fileNames = fs.readdirSync(projectsDirectory)
   const allProjectsData = fileNames.map((fileName) => {
-    const id = fileName.replace(/\.md$/, '');
-    const fullPath = path.join(projectsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const id = fileName.replace(/\.md$/, '')
+    const fullPath = path.join(projectsDirectory, fileName)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-    const matterResult = matter(fileContents);
+    const matterResult = matter(fileContents)
 
     return {
       id,
@@ -30,10 +30,10 @@ export default function getSortedProjectsData({locale}) {
 
 export function getProjectData(id, locale){
   try {
-    const projectsDirectory = path.join(process.cwd(), `projects/${locale}`);
-    const fullPath = path.join(projectsDirectory, `${id}.md`);
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
-    const matterResult = matter(fileContents);
+    const projectsDirectory = path.join(process.cwd(), `projects/${locale}`)
+    const fullPath = path.join(projectsDirectory, `${id}.md`)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+    const matterResult = matter(fileContents)
 
     return {
       id,

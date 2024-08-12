@@ -2,6 +2,7 @@
 title: 'Web-application "NA ZARE"'
 description: 'A web application for viewing and booking hotel apartments online.'
 date: '2024-01-01'
+type: 'Commerce'
 ---
 
 [Go to the project →](https://nazare.by)

@@ -1,0 +1,1 @@
+const projects_path = "/projects/"

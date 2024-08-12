@@ -102,6 +102,19 @@
   width: fit-content;
 }
 
+.project_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project_type{
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+  background: linear-gradient(45deg, red, blue);
+}
+
 .content{
   display: flex;
   flex-direction: column;
