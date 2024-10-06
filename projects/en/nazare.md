@@ -1,13 +1,13 @@
 ---
-title: 'Web-application "NA ZARE"'
+title: 'Web application for a park hotel'
 description: 'A web application for viewing and booking hotel apartments online.'
 date: '2024-01-01'
 type: 'Commerce'
 ---
 
-[Go to the project →](https://nazare.by)
+[Go to the project →](https://park-hotel.vercel.app/)
 
-This is a web application developed for the park hotel "NA ZARE". It's purpose is to provide users with convenient access to viewing and booking hotel apartments.
+This is a web application developed for a park hotel. It's purpose is to provide users with convenient access to view and book hotel apartments.
 
 ## My responsibilities:
 - Design development
