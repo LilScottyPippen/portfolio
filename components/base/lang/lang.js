@@ -1,11 +1,11 @@
 'use client'
-import styles from "@/public/css/page.module.css";
-import { useUrl } from 'nextjs-current-url';
+import styles from "@/public/css/page.module.css"
+import { useUrl } from 'nextjs-current-url'
 
 export default function Lang({ locale }) {
-  const { href: currentUrl, pathname } = useUrl() ?? {};
-  const currentPathWithoutLanguage = pathname ? pathname.replace(/^\/(en|ru)/, '') : '';
-  const newPath = `/${locale === 'en' ? 'ru' : 'en'}${currentPathWithoutLanguage}`;
+  const { href: currentUrl, pathname } = useUrl() ?? {}
+  const currentPathWithoutLanguage = pathname ? pathname.replace(/^\/(en|ru)/, '') : ''
+  const newPath = `/${locale === 'en' ? 'ru' : 'en'}${currentPathWithoutLanguage}`
 
   return (
     <>
@@ -25,5 +25,5 @@ export default function Lang({ locale }) {
             </>
         )}
     </>
-  );
+  )
 }

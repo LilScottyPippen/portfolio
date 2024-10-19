@@ -1,0 +1,35 @@
+.timer {
+    font-family: var(--font-mono);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: 1.5rem;
+}
+
+.timer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+}
+
+.timer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 680px) {
+    .timer{
+        padding: 10px;
+    }
+
+    .timer p{
+        font-size: 1rem;
+    }
+}

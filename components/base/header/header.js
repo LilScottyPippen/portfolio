@@ -1,7 +1,7 @@
-import styles from "@/public/css/page.module.css";
-import Lang from "../lang/lang";
-import Map from "./map";
-import TypeItText from "../../typeIt";
+import styles from "@/public/css/page.module.css"
+import Lang from "../lang/lang"
+import Map from "./map"
+import TypeItText from "../../typeIt"
 
 export default function Header({ t, locale, title }) {
   return (
@@ -22,5 +22,5 @@ export default function Header({ t, locale, title }) {
         </div>
       </header>
     </>
-  );
+  )
 }

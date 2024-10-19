@@ -1,4 +1,4 @@
-import styles from "@/public/css/page.module.css";
+import styles from "@/public/css/page.module.css"
 
 export default function Map({t, locale, title}) {
   return (
@@ -6,19 +6,19 @@ export default function Map({t, locale, title}) {
       {title === 'LilScottyPippen' ? (
         <>
           <p className={styles.bold}>LilScottyPippen</p>
-          <a href={`/${locale}/projects`}>{t('elements:projects')}</a>
+          <a href={`/${locale}/projects`}>{t('projects')}</a>
         </>
-      ) : title === t('elements:projects') ? (
+      ) : title === t('projects') ? (
         <>
           <a href={`/${locale}/`}>LilScottyPippen</a>
-          <p className={styles.bold}>{t('elements:projects')}</p>
+          <p className={styles.bold}>{t('projects')}</p>
         </>
       ) : (
         <>
           <a href={`/${locale}/`}>LilScottyPippen</a>
-          <a href={`/${locale}/projects`}>{t('elements:projects')}</a>
+          <a href={`/${locale}/projects`}>{t('projects')}</a>
         </>
       )}
     </>
-  );
+  )
 }

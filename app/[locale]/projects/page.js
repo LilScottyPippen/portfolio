@@ -1,19 +1,21 @@
 import Layout from "../layout"
-import styles from "@/public/css/page.module.css";
-import getTranslation from "@/components/base/lang/translations";
-import Header from "@/components/base/header/header";
-import Footer from "@/components/base/footer";
-import getSortedProjectsData, { getProjectType } from "./projects";
+import styles from "@/public/css/page.module.css"
+import getTranslation from "@/components/base/lang/translations"
+import Header from "@/components/base/header/header"
+import Footer from "@/components/base/footer"
+import getSortedProjectsData from "./projects"
+import ArmyTimer from "@/components/timers/types/ArmyTimer"
 
 let t
 
 export default async function Home({ params: { locale } }) {
-  t = await getTranslation(locale);
+  t = await getTranslation(locale)
 
   return (
     <>
       <Layout>
-        <Header t={t} locale={locale} title={t('elements:projects')} />
+        <Header t={t} locale={locale} title={t('projects')} />
+        <ArmyTimer locale={locale}/>
         <main className={styles.main}>
           <div className={styles.description}>
             <Projects t={t} locale={locale} />
@@ -22,7 +24,7 @@ export default async function Home({ params: { locale } }) {
         <Footer />
       </Layout>
     </>
-  );
+  )
 }
 
 async function Projects(locale) {
@@ -37,7 +39,7 @@ async function Projects(locale) {
             <span className={styles.project_type}>{project.type}</span>
           </span>
           <span>{project.description}</span>
-          <a href={`/projects/${project.id}`}>{t('elements:readMore')}</a>
+          <a href={`/projects/${project.id}`}>{t('readMore')}</a>
         </div>
       ))}
     </div>
